@@ -55,9 +55,19 @@ export default function Key() {
     ]);
   }
 
+  function changeOrderWithIndex() {
+    setIndexUsers([
+      { id: 2, name: 'Dmitriy' },
+      { id: 3, name: 'Anton' },
+      { id: 4, name: 'Artem' },
+      { id: 5, name: 'Andrey' },
+      { id: 1, name: 'Alexander' },
+    ]);
+  }
+
   return (
     <>
-      <div className={styles.wrapper}>
+      {/* <div className={styles.wrapper}>
         <h1 className="font-bold">id key</h1>
         {idUsers.map((user) => (
           <User key={user.id} name={user.name} />
@@ -74,9 +84,9 @@ export default function Key() {
         >
           deleteDmitry
         </button>
-      </div>
+      </div> */}
 
-      {/* <div className={styles.wrapper}>
+      <div className={styles.wrapper}>
         <h1 className="font-bold">index key</h1>
         {indexUsers.map((user, index) => (
           <User key={index} name={user.name} />
@@ -87,7 +97,13 @@ export default function Key() {
         >
           deleteDmitry
         </button>
-      </div> */}
+        <button
+          onClick={changeOrderWithIndex}
+          className="border border-gray-600 mt-2 p-2 rounded-xl"
+        >
+          changeOrder
+        </button>
+      </div>
     </>
   );
 }

@@ -1,4 +1,6 @@
-import MobX from './app/MobX';
+import Key from './app/Key';
+import React18 from './app/React18';
+import Test from './app/Test';
 
 function App() {
   // const queryClient = new QueryClient();
@@ -84,7 +86,9 @@ function App() {
   // return <CustomFilePicker />;
   // return <ErrorBoundaries />;
   // return <Key />;
-  return <MobX />;
+  // return <MobX />;
+  // return <Test />;
+  return <React18 />;
 }
 
 export default App;
