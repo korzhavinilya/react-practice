@@ -1,4 +1,5 @@
 import Key from './app/Key';
+import ReactLazyLoadImageComponent from './app/lazy-loading/react-lazy-load-image-component';
 import React18 from './app/React18';
 import Test from './app/Test';
 
@@ -88,7 +89,8 @@ function App() {
   // return <Key />;
   // return <MobX />;
   // return <Test />;
-  return <React18 />;
+  // return <React18 />;
+  return <ReactLazyLoadImageComponent />;
 }
 
 export default App;
