@@ -1,7 +1,4 @@
-import Key from './app/Key';
-import ReactLazyLoadImageComponent from './app/lazy-loading/react-lazy-load-image-component';
-import React18 from './app/React18';
-import Test from './app/Test';
+import ChunkSplitting from './app/chunk-splitting';
 
 function App() {
   // const queryClient = new QueryClient();
@@ -90,7 +87,8 @@ function App() {
   // return <MobX />;
   // return <Test />;
   // return <React18 />;
-  return <ReactLazyLoadImageComponent />;
+  // return <ReactLazyLoadImageComponent />;
+  return <ChunkSplitting />;
 }
 
 export default App;

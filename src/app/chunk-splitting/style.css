@@ -1,0 +1,33 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  border: 1px solid;
+  text-align: center;
+  padding: 10px;
+  background: moccasin;
+}
+
+.hero {
+  border: 1px solid;
+  padding: 150px 10px;
+  text-align: center;
+  background: honeydew;
+}
+
+.content {
+  border: 1px solid;
+  flex-grow: 1;
+  text-align: center;
+  background: cornflowerblue;
+}
+
+.footer {
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+  background: forestgreen;
+}
