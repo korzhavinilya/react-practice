@@ -1,4 +1,4 @@
-import ChunkSplitting from './app/chunk-splitting';
+import ContextAPI from './app/context-api';
 
 function App() {
   // const queryClient = new QueryClient();
@@ -88,7 +88,7 @@ function App() {
   // return <Test />;
   // return <React18 />;
   // return <ReactLazyLoadImageComponent />;
-  return <ChunkSplitting />;
+  return <ContextAPI />;
 }
 
 export default App;
