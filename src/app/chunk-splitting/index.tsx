@@ -1,4 +1,5 @@
 import { lazy, Suspense } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import EllipsisLoader from './components/EllipsisLoader';
 import Menu from './components/Menu';
 import RippleLoader from './components/RippleLoader';
@@ -11,14 +12,16 @@ export default function ChunkSplitting() {
 
   return (
     <div className="wrapper">
-      <Menu />
-      <Suspense fallback={<EllipsisLoader />}>
-        <Content />
-        <Hero />
-      </Suspense>
-      <Suspense fallback={<RippleLoader />}>
-        <Footer />
-      </Suspense>
+      <BrowserRouter>
+        <Menu />
+        <Suspense fallback={<EllipsisLoader />}>
+          <Content />
+          <Hero />
+        </Suspense>
+        <Suspense fallback={<RippleLoader />}>
+          <Footer />
+        </Suspense>
+      </BrowserRouter>
     </div>
   );
 }
