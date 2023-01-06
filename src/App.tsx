@@ -1,3 +1,5 @@
+import UseReducerContainer from './app/Hooks/useReducer';
+
 export default function App() {
-  return <div>App</div>;
+  return <UseReducerContainer />;
 }
